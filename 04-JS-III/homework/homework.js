@@ -120,9 +120,9 @@ function multiplicarArgumentos() {
   // Escribe tu código aquí:
   var resultado = 1;
   if (arguments.length === 0) {
-    return 0;
+    resultado = 0;
   } else if (arguments.length === 1) {
-    return arguments[0];
+    resultado = arguments[0];
   } else {
     for (let i = 0; i < arguments.length; i++) {
       resultado = resultado * arguments[i];
@@ -149,12 +149,12 @@ function diaDeLaSemana(numeroDeDia) {
   //Suponga que los días de la semana se codifican como 1 = Domingo, 2 = Lunes y así sucesivamente. 
   //Realiza una función que dado el número del día de la semana, retorne: Es fin de semana
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
-  //Escribe tu código aquí   
+  //Escribe tu código aquí
+  var resultado = "Es dia Laboral";   
   if (numeroDeDia === 1 || numeroDeDia === 7) {
-    return "Es fin de semana";
-  } else if (numeroDeDia < 7 && numeroDeDia > 1) {
-    return "Es dia Laboral";
+    resultado = "Es fin de semana";
   }
+    return resultado;
 }
 
 
@@ -163,11 +163,12 @@ function empiezaConNueve(n) {
   //inicia con 9 y false en otro caso.
   //Escribe tu código aqui
   var string = n.toString();
-  if (string[0] == 9) {
-    return true;
-  } else {
-    return false;
-  }
+  //if (string[0] == 9) {
+  //  return true;
+  //} else {
+  //  return false;
+  //}
+  return string[0] == 9;
 }
 
 
