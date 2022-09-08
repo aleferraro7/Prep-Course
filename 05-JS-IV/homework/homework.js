@@ -65,35 +65,38 @@ function tieneEmail (usuario) {
   // Devuelve "true" si el usuario tiene un valor definido para la propiedad "email"
   // De lo contratio, devuelve "false"
   // Tu código:
-  if (usuario.email) {
-    return true;
-  } else {
-    return false;
-  }
-}
+//   if (usuario.email) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+return usuario.email; 
 
 function tienePropiedad (objeto, propiedad) {
   // Devuelve "true" si el objeto (parámetro "objeto") tiene una propiedad (key) cuyo nombre es igual al valor del argumento "propiedad"
   // "propiedad" es un string
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (objeto[propiedad]) {
-    return true;
-  } else {
-    return false;
-  }
-}
+//   if (objeto[propiedad]) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+return objeto[propiedad];
 
 function verificarPassword (usuario, password) {
   // Comprueba si la "password" enviada coincide con la propiedad "password" del objeto "usuario"
   // Devuelve "true" si coinciden
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (usuario.password === password) {
-    return true;
-  } else {
-    return false;
-  }
+  //if (usuario.password === password) {
+  //  return true;
+  //} else {
+  //  return false;
+  //}
+  return usuario.password === password;
 }
 
 function actualizarPassword (usuario, nuevaPassword) {
